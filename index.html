@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday Khushi 🎂</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow: hidden;
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #ff758c, #ff7eb3, #a18cd1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .container {
+      text-align: center;
+      position: relative;
+      z-index: 5;
+      padding: 25px;
+    }
+
+    .photo{
+      width: 180px;
+      height: 230px;
+      border-radius: 0%;
+      object-fit: cover;
+      border: 5px solid white;
+      box-shadow: 0 0 20px rgba(255,255,255,0.8);
+      animation: glow 2s infinite alternate;
+      margin: 0 100px;
+    }
+
+    @keyframes glow {
+      from {
+        box-shadow: 0 0 15px white;
+      }
+      to {
+        box-shadow: 0 0 40px #fff;
+      }
+    }
+
+    h1 {
+      margin-top: 20px;
+      font-size: clamp(38px, 8vw, 75px);
+      animation: pop 1.5s infinite alternate;
+      text-shadow: 0 5px 20px rgba(0,0,0,0.25);
+    }
+
+    @keyframes pop {
+      from {
+        transform: scale(1);
+      }
+      to {
+        transform: scale(1.06);
+      }
+    }
+
+    .date {
+      font-size: 25px;
+      margin: 12px 0;
+      font-weight: bold;
+    }
+
+    .message {
+      font-size: 18px;
+      max-width: 600px;
+      margin: auto;
+      line-height: 1.6;
+    }
+
+    .cake {
+      font-size: 70px;
+      margin: 20px auto;
+      text-align: center;
+      animation: bounce 1s infinite alternate;
+    }
+    @media(max-width:60){
+      body{
+        min-height: 100vh;
+        overflow-x: hidden;
+      }
+      .container{
+        width: 100%;
+        padding: 15px 10px;
+      }
+      .photo{
+        width: 90;
+        height: 120px;
+        border: 3px solid white;
+      }
+      .cake{ font-size: 45px;
+      margin: 15px auto;
+    }
+     
+      h1 { 
+        font-size: 32px;
+        line-height: 1.2;
+        margin: 15 px 0;
+      }
+      .message{
+        font-size: 14px;
+        max-width: 90%;
+        line-height: 1.5;
+      }
+      .heart{
+        font-size: 20px;
+      }
+    }
+    
+    @keyframes bounce {
+      to {
+        transform: translateY(-12px);
+      }
+    }
+
+    .heart {
+      position: absolute;
+      bottom: -50px;
+      font-size: 30px;
+      animation: float 8s linear infinite;
+      opacity: 0.8;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 0;
+      }
+
+      20% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    .heart:nth-child(1) { left: 10%; animation-delay: 1s; }
+    .heart:nth-child(2) { left: 25%; animation-delay: 3s; }
+    .heart:nth-child(3) { left: 45%; animation-delay: 0s; }
+    .heart:nth-child(4) { left: 65%; animation-delay: 2s; }
+    .heart:nth-child(5) { left: 80%; animation-delay: 4s; }
+
+    .balloon {
+      position: absolute;
+      font-size: 55px;
+      animation: balloon 4s ease-in-out infinite alternate;
+    }
+
+    .b1 { top: 10%; left: 8%; }
+    .b2 { top: 15%; right: 8%; animation-delay: 1s; }
+    .b3 { bottom: 10%; left: 12%; animation-delay: 2s; }
+    .b4 { bottom: 12%; right: 12%; animation-delay: 1.5s; }
+
+    @keyframes balloon {
+      from {
+        transform: translateY(0) rotate(-5deg);
+      }
+      to {
+        transform: translateY(-25px) rotate(5deg);
+      }
+    }
+
+    .small {
+      margin-top: 10px;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Floating hearts -->
+  <div class="heart">❤️</div>
+  <div class="heart">💖</div>
+  <div class="heart">💕</div>
+  <div class="heart">💗</div>
+  <div class="heart">❤️</div>
+
+  <!-- Balloons -->
+  <div class="balloon b1">🎈</div>
+  <div class="balloon b2">🎈</div>
+  <div class="balloon b3">🎈</div>
+  <div class="balloon b4">🎈</div>
+
+  <div class="containe">
+
+    <!-- Kushi ki photo yahan lagao -->
+
+    <img src="pi.jpg"alt="Khushi" object="khushi" class="photo">
+
+    <img src="oo.jpg" alt="khushi" class="photo">
+    <img src="pp.jpg" alt="khushi" class="photo">
+
+    <div class="cake">🎂</div>
+
+    <h1> ❤️Happy Birthday Khushi 💖</h1>
+
+    <div class="date">
+      ✨ 22 August ✨
+    </div>
+
+    <p class="message">
+      "our fights are unlimited ,but so is our friendship!"😂❤️
+      <br>
+      "caution⚠️:ladaku vimman has landed! happy Birthday✈️🤣"
+    </p>
+
+    <p class="small">
+      Made with ❤️ specially for Khushi
+    </p>
+
+  </div>
+
+</body>
+</html>
